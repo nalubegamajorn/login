@@ -1,0 +1,31 @@
+body {
+    background-color: #f0f0f0;
+  }
+  
+  #cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .shadow.show {
+    opacity: 1;
+  }
